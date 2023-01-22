@@ -115,6 +115,14 @@ compile 'com.klinkerapps:android-smsmms:5.2.6'
 
 ---
 
+## Releasing
+
+Gitlab project members can publish a new package version by:
+- Go to your [access tokens](https://invent.kde.org/-/profile/personal_access_tokens)
+- Generate a new access token with api scope and a "soon" expiration date
+- Save that token as the TOKEN variable, like `export TOKEN="token-here"`
+- Run `./gradlew publish`
+
 ## License
 
     Copyright 2017 Jacob Klinker
