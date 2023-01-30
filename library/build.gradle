@@ -53,6 +53,9 @@ afterEvaluate {
             maven {
                 name = "KDE Invent Maven"
                 // Push to the repository for the kdeconnect-android project
+                // Note that this repository is not allowed by f-droid, so publishing this way is
+                // not needed to us. kdeconnect-android pulls from jitpack instead:
+                // https://jitpack.io/#org.kde.invent.sredman/android-smsmms
                 url = "https://invent.kde.org/api/v4/projects/72/packages/maven"
                 credentials(HttpHeaderCredentials) {
                     name = "Private-Token"
