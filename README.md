@@ -1,5 +1,7 @@
 # Android SMS/MMS Sending Library
 
+[![](https://jitpack.io/v/org.kde.invent.sredman/android-smsmms.svg)](https://jitpack.io/#org.kde.invent.sredman/android-smsmms)
+
 ![Promo](https://raw.githubusercontent.com/klinker41/android-smsmms/master/android-messaging.png)
 
 These are the APIs that Google has so far left out of the Android ecosystem for easily sending any type of message without digging through source code and what not.
@@ -110,7 +112,36 @@ For full details on how to implement, please check out the sample application. I
 To include in your gradle project:
 
 ```groovy
-compile 'com.klinkerapps:android-smsmms:5.2.6'
+implementation 'org.kde.invent.sredman:android-smsmms:kdeconnect-1-21-0'
+```
+
+or, to pull from KDE Invent
+
+```groovy
+implementation 'org.kde:android-smsmms:5.2.7'
+```
+
+and add the relevant repository (probably to settings.gradle)
+
+```groovy
+dependencyResolutionManagement {
+    ...
+    maven { url = "https://jitpack.io" }
+    ...
+}
+```
+
+or
+
+```groovy
+dependencyResolutionManagement {
+    ...
+    maven {
+        name = "KDE Invent Maven"
+        url = "https://invent.kde.org/api/v4/projects/72/packages/maven"
+    }
+    ...
+}
 ```
 
 ---
@@ -122,6 +153,17 @@ Gitlab project members can publish a new package version by:
 - Generate a new access token with api scope and a "soon" expiration date
 - Save that token as the TOKEN variable, like `export TOKEN="token-here"`
 - Run `./gradlew publish`
+
+Note that, invent.kde.org is not an allowed maven repository in f-droid.
+In order to get around that, KDE Connect Android uses jitpack, see the
+[PR](https://invent.kde.org/network/kdeconnect-android/-/merge_requests/309) for more details.
+
+You can trigger a new build in jitpack by:
+- Add a new tag to this repository
+- Update the dependency in the other project to use the new version
+- Build that project
+- Navigate to jitpack's entry for this repository and verify that the new release is showing
+  - [jitpack link](https://jitpack.io/#org.kde.invent.sredman/android-smsmms)
 
 ## License
 
