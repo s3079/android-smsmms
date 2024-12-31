@@ -1571,7 +1571,7 @@
     <apn carrier="Vina-gprs-mms" mcc="452" mnc="02" apn="m3-mms" user="mms" password="mms" authtype="1" mmsc="http://mms.vinaphone.com.vn" mmsproxy="10.1.10.46" mmsport="8000" type="mms" />
     <apn carrier="Viettel-wap-gprs 1" mcc="452" mnc="04" apn="v-internet" type="default,supl" />
     <apn carrier="Viettel-wap-gprs 2" mcc="452" mnc="04" apn="v-wap" proxy="192.168.233.10" port="8080" type="default,supl" />
-    <apn carrier="Viettel-gprs-mms" mcc="452" mnc="04" apn="v-mms" mmsc="http://mms.viettelmobile.com.vn/mms/wapenc" mmsproxy="192.168.233.10" mmsport="8080" type="mms" />
+    <apn carrier="Viettel-gprs-mms" mcc="452" mnc="04" apn="v-mms" mmsc="http://mms.viettel.vn" mmsproxy="192.168.233.10" mmsport="8080" type="mms" />
     <apn carrier="Vietnamobile_GPRS3" mcc="452" mnc="05" apn="internet" type="default,supl" />
     <apn carrier="Vietnamobile_GPRS1" mcc="452" mnc="05" apn="wap" proxy="10.10.128.44" port="8080" type="default,supl" />
     <apn carrier="Vietnamobile_GPRS2" mcc="452" mnc="05" apn="wap" type="default,supl" />
